@@ -13,4 +13,7 @@ Diplom frontend
 
 имеются скрытые элементы секции preloader и not-found
 
+проект доступен по ссылке
+
+https://ztironz.github.io/news-explorer-frontend/
 
