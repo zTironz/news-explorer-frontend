@@ -1,0 +1,23 @@
+.news__subtitle {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 1.2vw;
+line-height: 1.5vw;
+color: #1A1B22;
+margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .news__subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        overflow: overlay;
+margin-bottom: 60px;
+display: -webkit-box;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
+    }
+}

@@ -1,0 +1,27 @@
+.news__login{
+    position: absolute;
+    top: 24px;
+    right: 69px;
+    padding: 12px;
+    margin: 0;
+    background: #FFF;
+    box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .news__login{
+display: none;
+    }
+}

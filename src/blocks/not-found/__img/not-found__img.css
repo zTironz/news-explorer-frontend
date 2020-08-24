@@ -1,0 +1,6 @@
+.not-found__img {
+    margin: 0 auto;
+    max-height: 74px;
+    max-width: 74px;
+    display: flex;
+}

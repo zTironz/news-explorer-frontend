@@ -1,0 +1,11 @@
+.not-found__subtext {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #B6BCBF;
+    max-width: 356px;
+    margin: 0 auto;
+}

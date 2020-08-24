@@ -1,0 +1,24 @@
+@import url(./__input/search__input.css);
+@import url(./__button/search__button.css);
+
+
+
+.search {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    backdrop-filter: blur(8px);
+    border-radius: 100px;
+    width: 43%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+@media screen and  (max-width:680px) {
+    .search {
+        margin-top: 100px;
+    width: 80%;
+    background: transparent;
+    }
+}
+

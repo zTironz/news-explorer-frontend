@@ -1,0 +1,13 @@
+.news__main {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 768px) {
+    .news__main {
+        padding: 0 16px;
+    }
+
+}

@@ -1,0 +1,22 @@
+.about__avatar {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 61px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .about__avatar {
+        max-width: 232px;
+
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    .about__avatar {
+        max-width: 100%;
+
+    }
+}

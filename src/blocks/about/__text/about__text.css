@@ -1,0 +1,21 @@
+.about__text {
+    width: 600px;
+    margin-left: 56px;
+}
+
+@media screen and (max-width: 768px) {
+    .about__text {
+        width: 424px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 680px) {
+    .about__text {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+}

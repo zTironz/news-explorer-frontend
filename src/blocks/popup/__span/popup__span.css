@@ -1,0 +1,9 @@
+.popup__span {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 16px;
+}

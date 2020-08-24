@@ -1,0 +1,26 @@
+.about__group {
+    display: flex;
+    justify-content: center;
+    margin: 0 104px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .about__group {
+        margin: 0 40px;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+.about__group {
+    margin: 0 24px;
+    display: block;
+    
+}
+
+}
+

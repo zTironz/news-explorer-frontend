@@ -1,0 +1,15 @@
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7%;
+    min-height: 80px;
+    align-items: center;
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .header__menu {
+        padding: 0 6%;
+}
+
+}
