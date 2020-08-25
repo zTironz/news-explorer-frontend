@@ -13,6 +13,7 @@
 @import url(./__link/_active/header__link_active.css);
 @import url(./__link/_active/header__link_unactive.css);
 @import url(./__menu/header__menu-button.css);
+@import url(./__logout/header__logout.css);
 
 .header {
   min-height: 576px;

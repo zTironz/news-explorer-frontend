@@ -17,6 +17,7 @@
 @import url(./__about/header__about-text.css);
 @import url(./__title/header__title-article.css);
 @import url(./__subtitle/header__subtitle-article.css);
+@import url(./__logout/header__logout.css);
 
 .header-articles {
     background-color: white;

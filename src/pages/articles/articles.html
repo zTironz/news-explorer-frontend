@@ -21,7 +21,7 @@
           <button class="header__button header__link_unactive header__auth button user-info__button header__logo_black">Авторизоваться</button>
           <button class="header__button-article header__name button user-info__button header__logo_black">
             Грета
-            <img src="<%=require('../../images/logout_black.svg').default%>" alt="выхож">
+            <img src="<%=require('../../images/logout_black.svg').default%>" alt="кнопка выхода" class="header__logout">
           </button>
         </nav>
       </div>
@@ -38,7 +38,7 @@
       <p class="preloader__text">Идет поиск новостей...</p>
     </div>
     <div class="not-found">
-      <img class="not-found__img" src="<%=require('../../images/not-found_v1.svg').default%>" alt="не найдено">
+      <img class="not-found__img" src="<%=require('../../images/not-found_v1.svg').default%>" alt="изображение секции не найдено">
       <p class="not-found__text">Ничего не найдено</p>
       <p class="not-found__subtext">К сожалению по вашему запросу 
         ничего не найдено.</p>
@@ -47,7 +47,7 @@
       <div class="news__cards">
         <div class="news__card">
           <div class="news__head">
-            <img src="<%=require('../../images/image_08.png').default%>" alt="картинка" class="news__img">
+            <img src="<%=require('../../images/image_08.png').default%>" alt="фоновая картинка статьи" class="news__img">
             <p class="news__tag">Природа</p>
             <p class="news__login">Убрать из сохранённых</p>
             <button class="news__del"></button>
@@ -61,7 +61,7 @@
         </div>
         <div class="news__card">
           <div class="news__head">
-            <img src="<%=require('../../images/image_04.png').default%>" alt="картинка" class="news__img">
+            <img src="<%=require('../../images/image_04.png').default%>" alt="фоновая картинка статьи" class="news__img">
             <!-- <div class="news__add">fdgfdg</div> -->
             <button class="news__del"></button>
           </div>
@@ -75,7 +75,7 @@
         </div>
         <div class="news__card">
           <div class="news__head">
-            <img src="<%=require('../../images/image_07.png').default%>" alt="картинка" class="news__img">
+            <img src="<%=require('../../images/image_07.png').default%>" alt="фоновая картинка статьи" class="news__img">
             <button class="news__del"></button>
           </div>
           <div class="news__main">
@@ -87,7 +87,7 @@
         </div>
         <div class="news__card">
           <div class="news__head">
-            <img src="<%=require('../../images/image_08.png').default%>" alt="картинка" class="news__img">
+            <img src="<%=require('../../images/image_08.png').default%>" alt="фоновая картинка статьи" class="news__img">
             <p class="news__login">Убрать из сохранённых</p>
             <button class="news__del"></button>
           </div>
@@ -100,7 +100,7 @@
         </div>
         <div class="news__card">
           <div class="news__head">
-            <img src="<%=require('../../images/image_04.png').default%>" alt="картинка" class="news__img">
+            <img src="<%=require('../../images/image_04.png').default%>" alt="фоновая картинка статьи" class="news__img">
             <!-- <div class="news__add">fdgfdg</div> -->
             <button class="news__del"></button>
           </div>
@@ -114,7 +114,7 @@
         </div>
         <div class="news__card">
           <div class="news__head">
-            <img src="<%=require('../../images/image_07.png').default%>" alt="картинка" class="news__img">
+            <img src="<%=require('../../images/image_07.png').default%>" alt="фоновая картинка статьи" class="news__img">
             <button class="news__del"></button>
           </div>
           <div class="news__main">
@@ -136,8 +136,8 @@
                    <a href="https://yandex.ru" class="footer__link">Яндекс.Практикум</a>
                </nav>
                <div class="footer__socials">
-                   <a href="https://github.com" class="footer__social"><img src="<%=require('../../images/git.svg').default%>" alt="github icon" class="footer__img"></a>
-                   <a href="https://facebook.com" class="footer__social"><img src="<%=require('../../images/face.svg').default%>" alt="facebook icon" class="footer__img"></a>
+                   <a href="https://github.com" class="footer__social"><img src="<%=require('../../images/git.svg').default%>" alt="картинка ссылки github" class="footer__img"></a>
+                   <a href="https://facebook.com" class="footer__social"><img src="<%=require('../../images/face.svg').default%>" alt="картинка ссылки facebook" class="footer__img"></a>
                </div>
            </div>
        </div>
@@ -146,7 +146,7 @@
     
       <div class="popup popup-auth">
         <div class="popup__content">
-          <img src="<%=require('../../images/close.svg').default%>" alt="попап кнопка" class="popup__close" />
+          <img src="<%=require('../../images/close.svg').default%>" alt="картинка закрытия попапа" class="popup__close" />
           <h3 class="popup__title">Вход</h3>
           <form class="popup__form" name="new" novalidate>
             <p class="popup__email">Email</p>
@@ -167,7 +167,7 @@
 
     <div class="popup popup-reg">
       <div class="popup__content">
-        <img src="<%=require('../../images/close.svg').default%>" alt="попап кнопка" class="popup__close" />
+        <img src="<%=require('../../images/close.svg').default%>" alt="картинка закрытия попапа" class="popup__close" />
         <h3 class="popup__title">Регистрация</h3>
         <form class="popup__form" name="new" novalidate>
           <p class="popup__email">Email</p>
@@ -192,7 +192,7 @@
 
   <div class="popup popup__success">
     <div class="popup__content popup__content-success">
-      <img src="<%=require('../../images/close.svg').default%>" alt="попап кнопка" class="popup__close" />
+      <img src="<%=require('../../images/close.svg').default%>" alt="картинка закрытия попапа" class="popup__close" />
       <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
       <form class="popup__form" name="new" novalidate>
         <p class="popup__email">Выполнить вход</p>
