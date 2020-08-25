@@ -8,7 +8,8 @@
     box-sizing: border-box;
     backdrop-filter: blur(8px);
     border-radius: 100px;
-    width: 43%;
+    width: 60%;
+    max-width: 608px;
     margin: 0 auto;
     position: relative;
 }
@@ -22,3 +23,10 @@
     }
 }
 
+@media (width:768px) and  (max-width:1040px) {
+    .search{ 
+        width: 448px;
+    }
+
+
+}

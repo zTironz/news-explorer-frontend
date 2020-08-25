@@ -14,7 +14,7 @@ margin-bottom: 60px;
         font-weight: normal;
         font-size: 16px;
         line-height: 22px;
-        overflow: overlay;
+        overflow: hidden;
 margin-bottom: 60px;
 display: -webkit-box;
 -webkit-line-clamp: 4;
