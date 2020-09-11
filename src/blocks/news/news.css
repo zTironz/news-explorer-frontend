@@ -11,10 +11,12 @@
 @import url(./__subtitle/news__subtitle.css);
 @import url(./__source/news__source.css);
 @import url(./__more/news__more.css);
+@import url(./__tag/news__tag-main.css);
 
 .news {
     max-width: 1440px;
     flex-direction: column;
     background-color: #f5f6f7;
     margin: 0 auto;
+    display: none;
 }

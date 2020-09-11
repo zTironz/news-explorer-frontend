@@ -19,10 +19,10 @@
           src="<%=require('./images/menu.svg').default%>" alt="кнопка Меню"></button>
         <nav class="header__nav">
           <a class="header__link header__link_active" href="./">Главная</a>
-          <a class="header__link " href="./articles.html">Сохранённые статьи</a>
+          <a class="header__link header__article" href="./articles.html">Сохранённые статьи</a>
           <button class="header__button header__auth button user-info__button">Авторизоваться</button>
-          <button class="header__button header__name button user-info__button header__link_unactive header__user-name">
-            Грета
+          <button class="header__button header__name button user-info__button header__link_unactive ">
+            <p class="header__user-name"></p>
             <img src="<%=require('./images/logout.svg').default%>" alt="кнопка выхода" class="header__logout">
           </button>
         </nav>
@@ -30,6 +30,7 @@
       <div class="header__main">
         <div class="header__about">
           <h3 class="header__title">Что в мире творится?</h3>
+          
           <h4 class="header__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h4>
         </div>
         <form name="search" class="search search__form">
@@ -51,10 +52,12 @@
       </div>
     <section class="news">
       <p class="news__text">Результаты поиска</p>
+      
       <div class="news__cards">
-        <div class="news__card">
+        <!-- <div class="news__card">
           <div class="news__head">
             <img src="<%=require('../src/images/image_08.png').default%>" alt="фоновая картинка статьи" class="news__img">
+            
             <p class="news__login">Войдите, чтобы сохранять статьи</p>
             <button class="news__add"></button>
           </div>
@@ -68,7 +71,7 @@
         <div class="news__card">
           <div class="news__head">
             <img src="<%=require('../src/images/image_04.png').default%>" alt="фоновая картинка статьи" class="news__img">
-            <!-- <div class="news__add">fdgfdg</div> -->
+            
             <button class="news__add"></button>
           </div>
           <div class="news__main">
@@ -128,7 +131,7 @@
             <p class="news__subtitle">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
             <p class="news__source">Риа</p>
           </div>
-        </div>
+        </div> -->
         
       </div>
       <button class="news__more button">Показать еще</button>
@@ -164,15 +167,15 @@
         <div class="popup__content">
           <img src="<%=require('./images/close.svg').default%>" alt="кнопка закытия попапа" class="popup__close" />
           <h3 class="popup__title">Вход</h3>
-          <form class="popup__form" name="new" novalidate>
+          <form class="popup__form" name="edit" novalidate>
             <p class="popup__email">Email</p>
-            <input id="email" type="text" name="title" required class="popup__input popup__input_type_name"
-            placeholder="Введите почту"  minlength="2" maxlength="30" />
-            <span class="error-message">ошибка</span>
+            <input id="email" type="email" name="email" required class="popup__input popup__input_type_name"
+            placeholder="Введите почту" />
+            <span class="error-message"></span>
             <p class="popup__password">Пароль</p>
-            <input id="pass" type="password" name="link" required class="popup__input popup__input_type_link-url"
+            <input id="pass" type="password" name="password" required class="popup__input popup__input_type_link-url"
               placeholder="Введите пароль" />
-            <span class="error-message">ошибка</span>
+            <span class="error-message"></span>
             <button disabled id="submit" type="submit" class="button popup__button popup__button_disabled">
               Войти
           </button>
@@ -185,20 +188,21 @@
       <div class="popup__content">
         <img src="<%=require('./images/close.svg').default%>" alt="кнопка закытия попапа" class="popup__close" />
         <h3 class="popup__title">Регистрация</h3>
-        <form class="popup__form" name="new" novalidate>
+        <form class="popup__form popup__form-signup" name="new" novalidate>
           <p class="popup__email">Email</p>
-          <input id="mail" type="text" name="title" required class="popup__input popup__input_type_name"
-          placeholder="Введите почту"  minlength="2" maxlength="30" />
+          <input id="mail" type="email" name="email" required class="popup__input popup__input_type_name"
+          placeholder="Введите почту"/>
           <span class="error-message"></span>
           <p class="popup__password">Пароль</p>
-          <input id="password" type="password" name="link" required class="popup__input popup__input_type_link-url"
+          <input id="password" type="password" name="password"  required class="popup__input popup__input_type_link-url"
             placeholder="Введите пароль" />
           <span class="error-message"></span>
           <p class="popup__password">Имя</p>
-          <input id="username" type="text" name="link" required class="popup__input popup__input_type_link-url"
-            placeholder="Введите своё имя" />
-            <span class="error-message error-message-center">Такой пользователь уже есть</span>
-          <button disabled id="submit_reg" type="submit" class="button popup__button popup__button_disabled">
+          <input id="username" type="text" name="name" required class="popup__input popup__input_type_link-url"
+            placeholder="Введите своё имя" minlength='2' maxlength="30"/>
+            <span class="error-message"></span>
+            <span  class="error-message error-message-center" id="test"></span>
+          <button disabled id="submit" type="submit" class="button popup__button popup__button_disabled">
             Зарегистрироваться
         </button>
         <span class="popup__span">или <a class="popup__link popup__link-auth"> Войти</a></span>
@@ -211,7 +215,7 @@
       <img src="<%=require('./images/close.svg').default%>" alt="кнопка закытия попапа" class="popup__close" />
       <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
       <form class="popup__form" name="new" novalidate>
-        <p class="popup__email">Выполнить вход</p>
+        <p class="popup__email popup__link-auth2">Выполнить вход</p>
         
     </form>
   </div>
@@ -228,13 +232,18 @@
       <a class="popup__menu-link" href="./index.html">Главная</a>
     </li>
     <li class="popup__menu-item">
-      <a class="popup__menu-link" href="./articles.html">Сохраненные статьи</a>
+      <a class="popup__menu-link header__mob-article" href="./articles.html">Сохраненные статьи</a>
     </li>
   </ul>
 
-      <button disabled id="submit_auth" type="submit" class="button popup__button popup__menu-button popup__button_disabled">
+      <button  id="submit_auth" type="submit" class="button popup__button popup__menu-button header__mob-auth">
         Авторизоваться
     </button>
+    <button class="header__button  button user-info__button header__link_unactive header__mob-name">
+      <p class="header__mob-user-name"></p>
+      <img src="<%=require('./images/logout.svg').default%>" alt="кнопка выхода" class="header__logout header__mob-logout">
+    </button>
+    
   
 </div>
 </div>

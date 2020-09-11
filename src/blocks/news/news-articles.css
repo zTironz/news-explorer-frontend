@@ -11,6 +11,7 @@
 @import url(./__subtitle/news__subtitle.css);
 @import url(./__source/news__source.css);
 @import url(./__tag/news__tag.css);
+@import url(./__more/news__more-articles.css);
 
 
 .news {
@@ -18,4 +19,5 @@
     flex-direction: column;
     background-color: #f5f6f7;
     margin: 0 auto;
+    display: none;
 }
