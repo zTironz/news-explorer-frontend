@@ -1,0 +1,18 @@
+.header__main {
+    margin-top: 80px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header__main {
+        margin-top: 38px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 788px) {
+    .header__main {
+        margin-top: 38px;
+    }
+
+}

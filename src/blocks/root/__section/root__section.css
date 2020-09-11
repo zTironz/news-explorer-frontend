@@ -1,0 +1,13 @@
+.root__section {
+  max-width: 1440px;
+  background-image: url('../../../images/logo.png');
+  margin: auto;
+  background-size: cover;
+  background-position: 50%;
+}
+
+@media screen and (max-width: 980px) {
+  /* .root__section {
+    
+  } */
+}

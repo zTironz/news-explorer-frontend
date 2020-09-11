@@ -1,0 +1,28 @@
+.footer__group {
+    padding: 0 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer__group {
+        padding: 0 40px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 680px) {
+    .footer__group {
+        padding: 0 0;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+    }
+
+
+}

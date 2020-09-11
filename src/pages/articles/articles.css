@@ -1,0 +1,13 @@
+@import url(../../vendor/normalize.css);
+@import url(../../vendor/fonts.css);
+@import url(../../blocks/root/root.css);
+@import url(../../blocks/header/header-articles.css);
+@import url(../../blocks/logo/logo.css);
+@import url(../../blocks/popup/popup.css);
+@import url(../../blocks/preloader/preloader.css);
+@import url(../../blocks/news/news-articles.css);
+@import url(../../blocks/not-found/not-found.css);
+@import url(../../blocks/footer/footer.css);
+
+
+

@@ -1,0 +1,13 @@
+@import url(./__group/footer__group.css);
+@import url(./__copyright/footer__copyright.css);
+@import url(./__navigation/footer__navigation.css);
+@import url(./__links/footer__links.css);
+@import url(./__link/footer__link.css);
+@import url(./__socials/footer__socials.css);
+@import url(./__social/footer__social.css);
+
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: white;
+}

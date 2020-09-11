@@ -1,0 +1,6 @@
+.news__card {
+    background: #FFFFFF;
+border-radius: 16px;
+display: grid;
+position: relative;
+}
