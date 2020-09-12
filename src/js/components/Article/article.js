@@ -37,6 +37,8 @@ export default class Article {
         })
           .then((res) => {
             if (res) {
+            event.target.classList.add('news__click-add');
+            event.target.classList.remove('news__add')
               this.id = res.data._id;
             }
           })
@@ -44,7 +46,7 @@ export default class Article {
             throw err;
           });
       }
-    }
+    } 
   }
 
   create(infoArticle, keyword) {

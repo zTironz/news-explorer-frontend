@@ -63,6 +63,7 @@ exit__button.addEventListener('click', (event) => {
 
 mainApi.getArticles()
 .then((res) => {
+
   if (res.articles.length > 0 && res.articles.length === 3) {
     document.querySelector('.saves__length').textContent = `${res.articles.length}`;
     document.querySelector('.saves__keywords').textContent = `${res.articles[0].keyword}, ${res.articles[1].keyword}, ${res.articles[2].keyword}`;
