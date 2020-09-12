@@ -63,20 +63,33 @@ exit__button.addEventListener('click', (event) => {
 
 mainApi.getArticles()
 .then((res) => {
-
-  if (res.articles.length > 0 && res.articles.length === 3) {
+  let keywordsArr = [];
+  res.articles.forEach((item) => {
+    keywordsArr.push(item.keyword);
+  });
+  const keywords = {};
+  keywordsArr.forEach((item) => {
+      if (keywords[item]) {
+        keywords[item] += 1;
+      } else {
+        keywords[item] = 1;
+      }
+    });
+    
+const words = Object.keys(keywords).sort((a, b) => keywords[b] - keywords[a]);
+console.log(keywords);
+  if (words.length > 0 && words.length === 3) {
     document.querySelector('.saves__length').textContent = `${res.articles.length}`;
-    document.querySelector('.saves__keywords').textContent = `${res.articles[0].keyword}, ${res.articles[1].keyword}, ${res.articles[2].keyword}`;
-  } else if (res.articles.length > 0 && res.articles.length === 2) {
+    document.querySelector('.saves__keywords').textContent = `${words[0]}, ${words[1]}, ${words[2]}`;
+  } else if (words.length > 0 && words.length === 2) {
     document.querySelector('.saves__length').textContent = `${res.articles.length}`;
-    document.querySelector('.saves__keywords').textContent = `${res.articles[0].keyword}, ${res.articles[1].keyword}`;
-  } else if (res.articles.length > 0 && res.articles.length === 1) {
+    document.querySelector('.saves__keywords').textContent = `${words[0]}, ${words[1]}`;
+  } else if (words.length > 0 && words.length === 1) {
     document.querySelector('.saves__length').textContent = `${res.articles.length}`;
-    document.querySelector('.saves__keywords').textContent = `${res.articles[0].keyword}`;
-    console.log(res.articles[0].keyword)
-  } else if (res.articles.length > 0 && res.articles.length > 3) {
+    document.querySelector('.saves__keywords').textContent = `${words[0]}`;
+  } else if (words.length> 0 && words.length > 3) {
     document.querySelector('.saves__length').textContent = `${res.articles.length}`;
-    document.querySelector('.saves__keywords').textContent = `${res.articles[0].keyword}, ${res.articles[1].keyword} и ${res.articles.length - 2} другим.`;
+    document.querySelector('.saves__keywords').textContent = `${words[0]}, ${words[1]} и ${words.length - 2} другим.`;
   } else {
     document.querySelector('.saves__length').textContent = `нет`;
   }
