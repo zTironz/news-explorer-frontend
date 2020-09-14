@@ -1,6 +1,7 @@
 @import url(./__menu/header__menu.css);
 @import url(./__logo/header__logo.css);
 @import url(./__link/header__link.css);
+@import url(./__link/_article/header__article.css);
 @import url(./__link/_article/header__link_article.css);
 @import url(./__nav/header__nav.css);
 @import url(./__button/header__button.css);

@@ -1,4 +1,4 @@
-.news__add {
+.news__click-add {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -9,21 +9,13 @@
     position: absolute;
     top: 24px;
     right: 24px;
-    background-image: url(../../../images/add-uncolor.svg);
+    background-image: url(../../../images/add_color.svg);
     background-position: center;
     cursor: pointer;
     outline: none;
 }
 
-.news__add:hover{
-    background-image: url(../../../images/add_hover.svg);
-  }
-/* 
-.news__add:focus{
-    background-image: url(../../../images/add_color.svg);
-  } */
-
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .news__add {
       top: 8px;
       right: 8px;
