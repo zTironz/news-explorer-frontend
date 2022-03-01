@@ -5,7 +5,7 @@ const datanow = new Date().toISOString();
 
 export default class NewsApi {
   constructor() {
-    this.apikey = '0a47075e387044a3baacb9cb2cb020af';
+    this.apikey = 'abfd7572d42a46a1922889a2580248d3';
   }
 
   getNews(UserKeyWord) {
