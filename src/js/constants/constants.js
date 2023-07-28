@@ -25,7 +25,7 @@ const token = localStorage.getItem('token');
 
 
 const apiOption = {
-    baseUrl: 'https://api.tironz.com/',
+    baseUrl: 'https://api.tiron.dev/',
     headers: {
       authorization: `Bearer ${localStorage.getItem('token')}`,
       'Content-Type': 'application/json'
